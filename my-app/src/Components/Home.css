@@ -38,17 +38,97 @@
 
   @media (min-width: 768px) and (max-width: 1024px) {
     .nav {
-      height: 8vh; 
+      height: 12vh; 
     }
   }
   
 .nav .logo h3{
     position: relative;
-    font-size:xx-large;
+    font-size:2.7rem;
     color: white;
     justify-content:flex-start;
     font-family:'Times New Roman', Times, serif;
     margin: 50%;
 }
  
-  
+.nav .links {
+   
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100%;
+   width: 40%;
+   
+}
+
+
+
+.links .link{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size:x-large;
+}
+
+
+
+
+@media (min-width: 715px) and (max-width: 1200px) {
+  .nav .logo h3{
+   font-size: 2.1rem;
+}
+  .links .link{
+    
+    font-size:1.3rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 714px) {
+  .nav .logo h3{
+   font-size: 1.8rem
+}
+  .links .link{
+    
+    font-size:1.2rem;
+  }
+
+  .nav .links {
+   
+    
+    width: 60%;
+    
+ }
+}
+
+@media  (max-width: 549px) {
+  .nav .logo{
+    
+    height: 50%;
+    
+  }
+  .nav .logo h3{
+   font-size: xx-large;
+   margin: 0%;
+   width: 80%;
+}
+
+
+.nav .links{
+  width: 95%;
+  margin-top: 0px;
+}
+  .links .link{
+    
+    font-size:x-large;
+  }
+
+  .nav  {
+   /* background-color: #0a0404; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+   
+ }
+ 
+}
